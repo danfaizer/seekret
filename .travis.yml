@@ -15,7 +15,6 @@ deploy:
     secure: Bl/AuWhgcsVRfpBlWB4w1aBfjFkDuq11/pO8e8ZutyGbgzS5tKCuxsqjqUCHWkBVGws0e0pa9oXFzY3NciQfNq5ZHkZfQlzpssSoRYPEYC2HPoCvz/tUpYK/WAhCF2lRoAMYPv90zeNqNFcfXrF4NU3RJvRdhm0m7ZuF6GE2ZZbmnYELx0TunJEgpl/UCrPwepQHhoAa0L/JXMCj3013v5yK9Z5tXN3FpO5I5/kyfg4DEz3bUQPgqmRRRWbwPyIRIEnTKVGsZrW6RTWu6mRVSkbHUrGfmqw7/D0HAL8XCyk3fZX1Hv846nQdFKZkQ1DGzlEk+pZJek+pWd1QcZCZtswzyRZodhgg4dhej1gRJK5uiFMuSm8fAUa1oX7ck3LWUIT0JyG3AyxP/wmK7E9gN7RV/UdZHJOcyHl0w0FwgZkIGCnn7i1QWolFA3V49DRHvK4X31l8qQxxpEu8L49+3iyJG6U7RhNd4wgLiqyFYxO9ilzdCMwIisDypT42JKpuj0jtG8lOhD5GNkolnLt4dWUTXexLDDoCIl3yDeu9no1HG+6y/iS6NRS12BL1MB7EOA8pTs6BOxjG9A5ta+I+iGWZzXpnpVW6PT3vJynfE6eetBE9sJP3Q6pv8E4BHVZxc88wZfUosiw6rtOcBDPO/3XWNWXj8L85rQDmPrW/mtU=
   file:
     - release/seekret-linux-amd64
-    - release/seekret-linux-darwin
 
   on:
     repo: danfaizer/seekret
