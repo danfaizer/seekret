@@ -1,5 +1,5 @@
 language: go
-os:
+matrix:
   include:
     - os: linux
       dist: trusty
