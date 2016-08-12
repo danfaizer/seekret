@@ -1,4 +1,6 @@
 language: go
+go:
+  - 1.6
 dist: trusty
 sudo: required
 
@@ -9,4 +11,4 @@ before_install:
   - sudo apt-get clean
 
 install:
-  - go get github.com/apuigsech/seekret/cmd/seekret
+  - go get github.com/danfaizer/seekret/cmd/seekret
