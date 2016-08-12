@@ -1,14 +1,20 @@
 language: go
-dist: trusty
-sudo: required
-before_install:
-- sudo apt-get install cmake
-- go get -d github.com/libgit2/git2go
-- cd $GOPATH/src/github.com/libgit2/git2go
-- git checkout next
-- git submodule update --init
-- make install
-- cd $TRAVIS_BUILD_DIR
+os:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+    - os: osx
+
+before install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install cmake; fi
+  - go get -d github.com/libgit2/git2go
+  - cd $GOPATH/src/github.com/libgit2/git2go
+  - git checkout next
+  - git submodule update --init
+  - make install
+  - cd $TRAVIS_BUILD_DIR
 
 install:
 - go get github.com/danfaizer/seekret/cmd/seekret
