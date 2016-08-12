@@ -4,10 +4,11 @@ sudo: required
 before_install:
 - sudo apt-get install cmake
 - go get -d github.com/libgit2/git2go
-- cd github.com/libgit2/git2go
+- cd $GOPATH/src/github.com/libgit2/git2go
 - git checkout next
 - git submodule update --init
 - make install
+- cd $TRAVIS_BUILD_DIR
 
 install:
 - go get github.com/danfaizer/seekret/cmd/seekret
